@@ -36,6 +36,11 @@
 		64EFFA992367FBBD00E50276 /* CategoryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EFFA962367FBBD00E50276 /* CategoryViewCell.swift */; };
 		64EFFA9A2367FBBD00E50276 /* CategoryViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64EFFA972367FBBD00E50276 /* CategoryViewCell.xib */; };
 		64EFFA9B2367FBBD00E50276 /* CategoryViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64EFFA972367FBBD00E50276 /* CategoryViewCell.xib */; };
+		64EFFA9E2368467F00E50276 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EFFA9D2368467F00E50276 /* Product.swift */; };
+		64EFFAA1236857F100E50276 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EFFA9F236857F100E50276 /* ProductTableViewCell.swift */; };
+		64EFFAA2236857F100E50276 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EFFA9F236857F100E50276 /* ProductTableViewCell.swift */; };
+		64EFFAA3236857F100E50276 /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64EFFAA0236857F100E50276 /* ProductTableViewCell.xib */; };
+		64EFFAA4236857F100E50276 /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64EFFAA0236857F100E50276 /* ProductTableViewCell.xib */; };
 		64F897F82366A0F90098D771 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F897F72366A0F90098D771 /* CustomView.swift */; };
 		64F897FC2366FFEB0098D771 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F897FA2366FFEB0098D771 /* ResetPasswordViewController.swift */; };
 		64F897FD2366FFEB0098D771 /* ResetPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64F897FB2366FFEB0098D771 /* ResetPasswordViewController.xib */; };
@@ -69,6 +74,9 @@
 		64EFFA922367F1CF00E50276 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		64EFFA962367FBBD00E50276 /* CategoryViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewCell.swift; sourceTree = "<group>"; };
 		64EFFA972367FBBD00E50276 /* CategoryViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryViewCell.xib; sourceTree = "<group>"; };
+		64EFFA9D2368467F00E50276 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		64EFFA9F236857F100E50276 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		64EFFAA0236857F100E50276 /* ProductTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
 		64F897F72366A0F90098D771 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		64F897FA2366FFEB0098D771 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		64F897FB2366FFEB0098D771 /* ResetPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResetPasswordViewController.xib; sourceTree = "<group>"; };
@@ -208,6 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				64EFFA922367F1CF00E50276 /* Category.swift */,
+				64EFFA9D2368467F00E50276 /* Product.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -217,6 +226,8 @@
 			children = (
 				64EFFA962367FBBD00E50276 /* CategoryViewCell.swift */,
 				64EFFA972367FBBD00E50276 /* CategoryViewCell.xib */,
+				64EFFA9F236857F100E50276 /* ProductTableViewCell.swift */,
+				64EFFAA0236857F100E50276 /* ProductTableViewCell.xib */,
 			);
 			path = XIBs;
 			sourceTree = "<group>";
@@ -346,6 +357,7 @@
 				64BF80FC236569FF00B5479B /* Assets.xcassets in Resources */,
 				64BF81232365910C00B5479B /* GoogleService-Info.plist in Resources */,
 				64BF80FA236569FC00B5479B /* Main.storyboard in Resources */,
+				64EFFAA3236857F100E50276 /* ProductTableViewCell.xib in Resources */,
 				64BF8121236570D800B5479B /* LoginStoryboard.storyboard in Resources */,
 				64F897FD2366FFEB0098D771 /* ResetPasswordViewController.xib in Resources */,
 			);
@@ -356,6 +368,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				64BF811923656A2300B5479B /* LaunchScreen.storyboard in Resources */,
+				64EFFAA4236857F100E50276 /* ProductTableViewCell.xib in Resources */,
 				64EFFA9B2367FBBD00E50276 /* CategoryViewCell.xib in Resources */,
 				64BF812923659CC800B5479B /* GoogleService-Info.plist in Resources */,
 				64BF811F23656A4800B5479B /* Assets.xcassets in Resources */,
@@ -496,7 +509,9 @@
 				64EFFA932367F1CF00E50276 /* Category.swift in Sources */,
 				64BF81362365B62000B5479B /* LoginViewController.swift in Sources */,
 				64F897F82366A0F90098D771 /* CustomView.swift in Sources */,
+				64EFFA9E2368467F00E50276 /* Product.swift in Sources */,
 				64BF80F7236569FC00B5479B /* HomeViewController.swift in Sources */,
+				64EFFAA1236857F100E50276 /* ProductTableViewCell.swift in Sources */,
 				64BF81382365B63100B5479B /* RegisterViewController.swift in Sources */,
 				64BF80F3236569FC00B5479B /* AppDelegate.swift in Sources */,
 				64BF81302365B2AE00B5479B /* Constant.swift in Sources */,
@@ -510,6 +525,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				64BF811123656A2200B5479B /* ViewController.swift in Sources */,
+				64EFFAA2236857F100E50276 /* ProductTableViewCell.swift in Sources */,
 				64BF810D23656A2200B5479B /* AppDelegate.swift in Sources */,
 				64BF812E2365AE5400B5479B /* Constant.swift in Sources */,
 				64BF810F23656A2200B5479B /* SceneDelegate.swift in Sources */,

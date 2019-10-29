@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="180" id="KGk-i7-Jjw" customClass="ProductTableViewCell" customModule="Artable" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="467" height="180"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="467" height="180"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ot-J8-gFV">
+                        <rect key="frame" x="4" y="4" width="459" height="172"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Nej-mE-tI9">
+                                <rect key="frame" x="8" y="8" width="156" height="156"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Nej-mE-tI9" secondAttribute="height" multiplier="1:1" id="aPZ-fd-hEo"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="HVV-gH-cB5">
+                                <rect key="frame" x="224" y="28.5" width="175" height="115"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ud8-bv-I18">
+                                        <rect key="frame" x="0.0" y="0.0" width="175" height="22.5"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$123" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kn6-lV-q3b">
+                                        <rect key="frame" x="0.0" y="34.5" width="175" height="32.5"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ohq-3P-wZx">
+                                        <rect key="frame" x="0.0" y="79" width="175" height="36"/>
+                                        <color key="backgroundColor" red="0.71936341811870708" green="0.26746225053151829" blue="0.1867140297325427" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                                        <state key="normal" title="Add to cart">
+                                            <color key="titleColor" red="0.95294117649999999" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="addToCartClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="sFj-og-gc3"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hD-Uu-PQl">
+                                <rect key="frame" x="421" y="8" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="0dh-Ea-08e"/>
+                                    <constraint firstAttribute="width" constant="30" id="qWx-Sk-XXH"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="empty_star"/>
+                                <connections>
+                                    <action selector="favIconClieked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="cgP-yB-Ced"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Nej-mE-tI9" firstAttribute="top" secondItem="5ot-J8-gFV" secondAttribute="top" constant="8" id="5Wc-vA-QeV"/>
+                            <constraint firstItem="HVV-gH-cB5" firstAttribute="centerY" secondItem="Nej-mE-tI9" secondAttribute="centerY" id="Icp-d8-0wM"/>
+                            <constraint firstItem="7hD-Uu-PQl" firstAttribute="top" secondItem="5ot-J8-gFV" secondAttribute="top" constant="8" id="NgF-Qd-D0C"/>
+                            <constraint firstItem="HVV-gH-cB5" firstAttribute="leading" secondItem="Nej-mE-tI9" secondAttribute="trailing" constant="60" id="Qzk-SP-aeb"/>
+                            <constraint firstAttribute="trailing" secondItem="HVV-gH-cB5" secondAttribute="trailing" constant="60" id="ZiN-vW-a23"/>
+                            <constraint firstAttribute="trailing" secondItem="7hD-Uu-PQl" secondAttribute="trailing" constant="8" id="gHH-Og-1EE"/>
+                            <constraint firstItem="Nej-mE-tI9" firstAttribute="leading" secondItem="5ot-J8-gFV" secondAttribute="leading" constant="8" id="inr-wq-jzB"/>
+                            <constraint firstAttribute="bottom" secondItem="Nej-mE-tI9" secondAttribute="bottom" constant="8" id="kUl-mP-hez"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="5ot-J8-gFV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="2jA-bb-eCu"/>
+                    <constraint firstAttribute="bottom" secondItem="5ot-J8-gFV" secondAttribute="bottom" constant="4" id="8p3-uo-Jz4"/>
+                    <constraint firstItem="5ot-J8-gFV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="4" id="NHN-hH-I2t"/>
+                    <constraint firstAttribute="trailing" secondItem="5ot-J8-gFV" secondAttribute="trailing" constant="4" id="h5y-Gp-2X2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="productImageView" destination="Nej-mE-tI9" id="2eU-uE-YMd"/>
+                <outlet property="productNameLabel" destination="Ud8-bv-I18" id="zDF-wc-wNS"/>
+                <outlet property="productPriceLabel" destination="Kn6-lV-q3b" id="Hvk-bf-sZc"/>
+            </connections>
+            <point key="canvasLocation" x="100.72463768115942" y="141.29464285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="empty_star" width="47" height="47"/>
+    </resources>
+</document>

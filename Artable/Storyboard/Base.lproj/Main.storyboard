@@ -59,11 +59,47 @@
                     <connections>
                         <outlet property="collectionView" destination="01c-hf-yNE" id="Cwc-pt-1kg"/>
                         <outlet property="loginoutBarButton" destination="s0K-rn-BI1" id="dQP-xs-ZBA"/>
+                        <segue destination="y4g-Md-0RP" kind="show" identifier="toProduct" id="TbN-mC-OK2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="69.642857142857139"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ZXD-Gb-S8e">
+            <objects>
+                <viewController id="y4g-Md-0RP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uur-nm-NHs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.20000000298023224" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_cat3" translatesAutoresizingMaskIntoConstraints="NO" id="q8Q-CS-t6Y">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ORH-ZP-Dql">
+                                <rect key="frame" x="20" y="88" width="374" height="808"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ORH-ZP-Dql" secondAttribute="bottom" id="2L3-kr-tQO"/>
+                            <constraint firstAttribute="bottom" secondItem="q8Q-CS-t6Y" secondAttribute="bottom" id="9AO-1W-MXs"/>
+                            <constraint firstItem="Qhw-MV-GNb" firstAttribute="trailing" secondItem="ORH-ZP-Dql" secondAttribute="trailing" constant="20" id="BT8-9v-IRz"/>
+                            <constraint firstItem="Qhw-MV-GNb" firstAttribute="trailing" secondItem="q8Q-CS-t6Y" secondAttribute="trailing" id="DtA-fA-zlB"/>
+                            <constraint firstItem="ORH-ZP-Dql" firstAttribute="top" secondItem="Qhw-MV-GNb" secondAttribute="top" id="Ev8-3M-DMz"/>
+                            <constraint firstItem="q8Q-CS-t6Y" firstAttribute="leading" secondItem="Qhw-MV-GNb" secondAttribute="leading" id="PlA-rM-Epg"/>
+                            <constraint firstItem="ORH-ZP-Dql" firstAttribute="leading" secondItem="Qhw-MV-GNb" secondAttribute="leading" constant="20" id="Uhm-Lw-iOJ"/>
+                            <constraint firstItem="q8Q-CS-t6Y" firstAttribute="top" secondItem="Qhw-MV-GNb" secondAttribute="top" id="j0a-Og-IoD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Qhw-MV-GNb"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cWD-pB-KdA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uAp-e6-Sic" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1850.7246376811595" y="69.642857142857139"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="QSV-QP-pgp">
